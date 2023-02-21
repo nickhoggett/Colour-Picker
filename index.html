@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colour Scheme Picker</title>
+    <link rel="stylesheet" href="./index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div>
+
+    </div>
+    <main>
+        <div id="controls" class="flex">
+            <input id="color-picker" type="color">
+            <form id="drop-down">
+                <select id="color-schemes" name="color-schemes">
+                    <option value="monochrome">Monochrome</option>
+                    <option value="monochrome-dark">Monochrome-dark</option>
+                    <option value="monochrome-light">Monochrome-light</option>
+                    <option value="">Analog</option>
+                    <option value="complement">Complement</option>
+                    <option value="analogic-complement">Complement-analog</option>
+                    <option value="triad">Triad</option>
+                    <option value="quad">Quad</option>
+                </select>
+            </form>
+            <button id="get-scheme">Get Colour Scheme</button>
+        </div>
+        <div id="color-grid" class="flex"></div>
+        <div id="hex-values" class="flex"></div>
+    </main>
+    <script src="index.js"></script>
+</body>
+
+</html>
